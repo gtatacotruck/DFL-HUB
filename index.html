@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DFL | Elite Gaming Support</title>
+  <meta name="description" content="DFL — Joining streamers' games and boosting their confidence with elite gameplay compliments" />
+  <link rel="icon" href="logo_icon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading overlay -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-circle"></div>
+  </div>
+
+  <!-- Credits tape -->
+  <div id="credits" class="credits-tape">
+    <span>music & site made by GTAtacotruck</span>
+  </div>
+
+  <!-- Background audio (autoplay muted by default) -->
+  <audio id="bgAudio" loop preload="auto" playsinline>
+    <source src="DFLWEBSITESONG.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Mute / Unmute toggle -->
+  <button id="audioToggle" aria-pressed="false" title="Toggle background audio" class="audio-toggle" aria-label="Toggle background audio">🔈</button>
+
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="scanline"></div>
+    <div class="glitch-overlay"></div>
+  </div>
+
+  <!-- Main Container -->
+  <main id="site" class="profile-container" aria-hidden="true">
+    <!-- Enhanced header section -->
+    <header class="profile-header">
+      <div class="logo-section">
+        <div class="logo-glow">DFL</div>
+        <div class="subtitle">KILLING STREAMERS SINCE 2023</div>
+      </div>
+      
+      <nav class="profile-nav">
+        <button class="nav-btn active" data-section="overview">OVERVIEW</button>
+        <button class="nav-btn" data-section="socials">CONNECT</button>
+        <button class="nav-btn" data-section="snipe">SNIPE</button>
+        <button class="nav-btn" data-section="audio">AUDIO</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="title-main">FYLS</span>
+          <span class="title-sub">SUPPORT SQUAD</span>
+        </h1>
+        <p class="hero-description">
+          We emerge from the shadows. Joining streamers' games and boosting their confidence with elite gameplay compliments. 
+          We turn struggling streams into legendary moments.
+        </p>
+        <div class="hero-actions">
+          <button class="cta-button primary" onclick="window.open('https://discord.gg/ECEsy3E677', '_blank')">
+            <span>JOIN US</span>
+            <div class="button-glow"></div>
+          </button>
+          <button class="cta-button secondary" onclick="window.open('https://www.tiktok.com/@dflwarfootage/video/7556363197473738006', '_blank')">
+            <span>WATCH DEMO</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hologram-card">
+          <div class="hologram-content">
+            <div class="status-indicator"></div>
+            <div class="card-text">SERVER STATUS</div>
+            <div class="card-value">ONLINE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Sections -->
+    <div class="content-grid">
+      <!-- Overview Section -->
+      <section id="overview" class="content-section active">
+        <!-- This section is now empty -->
+      </section>
+
+      <!-- Socials Section -->
+      <section id="socials" class="content-section">
+        <div class="socials-container">
+          <h2 class="section-title">// CONNECTION_HUB</h2>
+          <div class="social-links">
+            <a href="https://www.instagram.com/dfl.warfootage?igsh=NTc4MTIwNjQ2YQ==" 
+               class="social-card instagram" target="_blank">
+              <div class="social-icon">⚡</div>
+              <div class="social-details">
+                <h3>Instagram</h3>
+                <p>@dfl.warfootage</p>
+              </div>
+              <div class="social-arrow">→</div>
+            </a>
+            
+            <a href="https://www.tiktok.com/@dflwarfootage?_r=1&_t=ZP-915HjsF5nu3" 
+               class="social-card tiktok" target="_blank">
+              <div class="social-icon">🔥</div>
+              <div class="social-details">
+                <h3>TikTok</h3>
+                <p>@dflwarfootage</p>
+              </div>
+              <div class="social-arrow">→</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Snipe of the Month Section -->
+      <section id="snipe" class="content-section">
+        <div class="snipe-wrap section-card dark-card">
+          <h2 class="section-title">// SNIPE_OF_THE_MONTH</h2>
+          <div id="snipeContainer" class="snipe-container">
+            <div class="snipe-placeholder" aria-label="Mystery snipe">?</div>
+          </div>
+          <p class="snipe-caption">"woman laughs as DFL member tells her nice words"</p>
+        </div>
+      </section>
+
+      <!-- Audio of the Month Section -->
+      <section id="audio" class="content-section">
+        <div class="snipe-wrap section-card dark-card">
+          <h2 class="section-title">// AUDIO_OF_THE_MONTH</h2>
+          <div id="audioContainer" class="snipe-container">
+            <div class="snipe-placeholder" aria-label="Mystery audio">?</div>
+          </div>
+          <p class="snipe-caption">"a very rhythmic remix of super Mario world"</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="profile-footer">
+      <div class="footer-content">
+        <div class="footer-text">DFL • TACTICAL STREAM SUPPORT</div>
+        <div class="footer-glow"></div>
+      </div>
+
+      <!-- Waveform visualizer canvas (scrappy, bottom) -->
+      <canvas id="waveform" aria-hidden="true"></canvas>
+    </footer>
+  </main>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
